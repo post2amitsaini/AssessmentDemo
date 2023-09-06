@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import AssessmentAuthentication
 
 @main
 struct AssessmentDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SigninView()
         }
     }
 }
