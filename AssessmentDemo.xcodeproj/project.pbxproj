@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A668AAA82AA5D819005D71BD /* AssessmentAuthentication in Frameworks */ = {isa = PBXBuildFile; productRef = A668AAA72AA5D819005D71BD /* AssessmentAuthentication */; };
+		A6D8785F2AB03085009E807A /* AssessmentHome in Frameworks */ = {isa = PBXBuildFile; productRef = A6D8785E2AB03085009E807A /* AssessmentHome */; };
 		A6D8DD0E2AAB22E1006B23D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D8DD0D2AAB22E0006B23D5 /* GoogleService-Info.plist */; };
 		A6EAD6DA2AA0CB3100B10C68 /* AssessmentDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EAD6D92AA0CB3100B10C68 /* AssessmentDemoApp.swift */; };
 		A6EAD6DC2AA0CB3100B10C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EAD6DB2AA0CB3100B10C68 /* ContentView.swift */; };
@@ -58,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A668AAA82AA5D819005D71BD /* AssessmentAuthentication in Frameworks */,
+				A6D8785F2AB03085009E807A /* AssessmentHome in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +182,7 @@
 			name = AssessmentDemo;
 			packageProductDependencies = (
 				A668AAA72AA5D819005D71BD /* AssessmentAuthentication */,
+				A6D8785E2AB03085009E807A /* AssessmentHome */,
 			);
 			productName = AssessmentDemo;
 			productReference = A6EAD6D62AA0CB3100B10C68 /* AssessmentDemo.app */;
@@ -625,6 +628,10 @@
 		A668AAA72AA5D819005D71BD /* AssessmentAuthentication */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AssessmentAuthentication;
+		};
+		A6D8785E2AB03085009E807A /* AssessmentHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AssessmentHome;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

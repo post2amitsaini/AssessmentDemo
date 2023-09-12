@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AssessmentAuthentication
+import AssessmentHome
 
 struct ContentView: View {
     
