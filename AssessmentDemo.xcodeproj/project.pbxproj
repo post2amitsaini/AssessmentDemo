@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A668AAA82AA5D819005D71BD /* AssessmentAuthentication in Frameworks */ = {isa = PBXBuildFile; productRef = A668AAA72AA5D819005D71BD /* AssessmentAuthentication */; };
+		A6D8DD0E2AAB22E1006B23D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D8DD0D2AAB22E0006B23D5 /* GoogleService-Info.plist */; };
 		A6EAD6DA2AA0CB3100B10C68 /* AssessmentDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EAD6D92AA0CB3100B10C68 /* AssessmentDemoApp.swift */; };
 		A6EAD6DC2AA0CB3100B10C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EAD6DB2AA0CB3100B10C68 /* ContentView.swift */; };
 		A6EAD6DE2AA0CB3300B10C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EAD6DD2AA0CB3300B10C68 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		A64F4D7C2AA0D67F005E81BF /* AssessmentAuthentication */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssessmentAuthentication; path = ../AssessmentAuthentication; sourceTree = "<group>"; };
 		A64F4D7D2AA0D6C2005E81BF /* AssessmentHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssessmentHome; path = ../AssessmentHome; sourceTree = "<group>"; };
 		A668AA952AA0E87B005D71BD /* AssessmentCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssessmentCore; path = ../AssessmentCore; sourceTree = "<group>"; };
+		A6D8DD0D2AAB22E0006B23D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6EAD6D62AA0CB3100B10C68 /* AssessmentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssessmentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EAD6D92AA0CB3100B10C68 /* AssessmentDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentDemoApp.swift; sourceTree = "<group>"; };
 		A6EAD6DB2AA0CB3100B10C68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A6D8DD0C2AAB22D4006B23D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6D8DD0D2AAB22E0006B23D5 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A6EAD6CD2AA0CB3100B10C68 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		A6EAD6D82AA0CB3100B10C68 /* AssessmentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A6D8DD0C2AAB22D4006B23D5 /* Resources */,
 				A668AA962AA0EDC3005D71BD /* Application */,
 				A6EAD6DD2AA0CB3300B10C68 /* Assets.xcassets */,
 				A6EAD6DF2AA0CB3300B10C68 /* Preview Content */,
@@ -260,6 +271,7 @@
 			files = (
 				A6EAD6E12AA0CB3300B10C68 /* Preview Assets.xcassets in Resources */,
 				A6EAD6DE2AA0CB3300B10C68 /* Assets.xcassets in Resources */,
+				A6D8DD0E2AAB22E1006B23D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

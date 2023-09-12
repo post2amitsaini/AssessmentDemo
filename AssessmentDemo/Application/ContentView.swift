@@ -6,17 +6,15 @@
 //
 
 import SwiftUI
+import AssessmentAuthentication
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+                MovieListView()
+            }
         }
-        .padding()
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -24,3 +22,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

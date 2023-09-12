@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
-import AssessmentAuthentication
+import Firebase
 
 @main
 struct AssessmentDemoApp: App {
+   
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            SigninView()
+                ContentView()
         }
     }
 }
