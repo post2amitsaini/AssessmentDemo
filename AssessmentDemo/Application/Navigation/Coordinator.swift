@@ -8,7 +8,6 @@
 import SwiftUI
 import AssessmentAuthentication
 import AssessmentHome
-import Swinject
 
 enum Page: String, Identifiable {
     case SignIn,SignUp, Home

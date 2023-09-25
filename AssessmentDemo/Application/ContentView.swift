@@ -6,9 +6,6 @@
 //
 
 import SwiftUI
-import AssessmentAuthentication
-import AssessmentHome
-import Swinject
 
 struct ContentView: View {
     

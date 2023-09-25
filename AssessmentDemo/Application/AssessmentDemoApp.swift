@@ -7,8 +7,6 @@
 
 import SwiftUI
 import Firebase
-import AssessmentAuthentication
-import Swinject
 
 @main
 struct AssessmentDemoApp: App {
