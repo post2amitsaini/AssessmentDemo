@@ -8,14 +8,14 @@
 import SwiftUI
 import AssessmentAuthentication
 import AssessmentHome
+import Swinject
 
 struct ContentView: View {
-    
+    @EnvironmentObject var authenticationData: AuthenticationData
     var body: some View {
-        NavigationView {
-                //SigninView()
-            }
-        }
+        //print(authenticationData.signUPValue)
+        CoordinatorView()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -23,4 +23,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
 
