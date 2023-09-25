@@ -10,26 +10,15 @@ import Firebase
 import AssessmentAuthentication
 import Swinject
 
-// Create a global shared container
-let sharedContainer = Container()
-
 @main
 struct AssessmentDemoApp: App {
-    
-    @StateObject private var authenticationData = AuthenticationData()
-    //let container = Container()
-    let authenticationDependencies = DefaultAuthenticationDependencies()
-    
-    
+ 
     init() {
-        FirebaseApp.configure()
-        authenticationDependencies.registerDependencies(container: sharedContainer)
-        
+        FirebaseApp.configure()        
     }
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(authenticationData)
         }
     }
 }

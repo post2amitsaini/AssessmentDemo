@@ -11,9 +11,8 @@ import AssessmentHome
 import Swinject
 
 struct ContentView: View {
-    @EnvironmentObject var authenticationData: AuthenticationData
+    
     var body: some View {
-        //print(authenticationData.signUPValue)
         CoordinatorView()
     }
 }

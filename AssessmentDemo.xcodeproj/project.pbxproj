@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A606967D2ABD5BA800AF8D6A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606967C2ABD5BA800AF8D6A /* Coordinator.swift */; };
 		A606967F2ABD61B200AF8D6A /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606967E2ABD61B200AF8D6A /* CoordinatorView.swift */; };
+		A61AB9BC2AC1B198007A903B /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61AB9BB2AC1B198007A903B /* DependencyContainer.swift */; };
 		A668AAA82AA5D819005D71BD /* AssessmentAuthentication in Frameworks */ = {isa = PBXBuildFile; productRef = A668AAA72AA5D819005D71BD /* AssessmentAuthentication */; };
 		A6D8785F2AB03085009E807A /* AssessmentHome in Frameworks */ = {isa = PBXBuildFile; productRef = A6D8785E2AB03085009E807A /* AssessmentHome */; };
 		A6D8DD0E2AAB22E1006B23D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D8DD0D2AAB22E0006B23D5 /* GoogleService-Info.plist */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		A606967C2ABD5BA800AF8D6A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A606967E2ABD61B200AF8D6A /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		A61AB9BB2AC1B198007A903B /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		A64F4D7C2AA0D67F005E81BF /* AssessmentAuthentication */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssessmentAuthentication; path = ../AssessmentAuthentication; sourceTree = "<group>"; };
 		A64F4D7D2AA0D6C2005E81BF /* AssessmentHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssessmentHome; path = ../AssessmentHome; sourceTree = "<group>"; };
 		A668AA952AA0E87B005D71BD /* AssessmentCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssessmentCore; path = ../AssessmentCore; sourceTree = "<group>"; };
@@ -93,9 +95,18 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		A61AB9BA2AC1B189007A903B /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A61AB9BB2AC1B198007A903B /* DependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		A668AA962AA0EDC3005D71BD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A61AB9BA2AC1B189007A903B /* DI */,
 				A606967B2ABD5B8200AF8D6A /* Navigation */,
 				A6EAD6D92AA0CB3100B10C68 /* AssessmentDemoApp.swift */,
 				A6EAD6DB2AA0CB3100B10C68 /* ContentView.swift */,
@@ -314,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6EAD6DC2AA0CB3100B10C68 /* ContentView.swift in Sources */,
+				A61AB9BC2AC1B198007A903B /* DependencyContainer.swift in Sources */,
 				A6EAD6DA2AA0CB3100B10C68 /* AssessmentDemoApp.swift in Sources */,
 				A606967D2ABD5BA800AF8D6A /* Coordinator.swift in Sources */,
 				A606967F2ABD61B200AF8D6A /* CoordinatorView.swift in Sources */,
