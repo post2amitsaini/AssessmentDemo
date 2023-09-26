@@ -12,7 +12,8 @@ import Firebase
 struct AssessmentDemoApp: App {
  
     init() {
-        FirebaseApp.configure()        
+        FirebaseApp.configure()
+        setupSwinjectContainer()
     }
     var body: some Scene {
         WindowGroup {

@@ -8,6 +8,7 @@
 import SwiftUI
 import AssessmentAuthentication
 import AssessmentHome
+import AssessmentCore
 
 enum Page: String, Identifiable {
     case SignIn,SignUp, Home
@@ -37,13 +38,12 @@ class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
     @Published var sheet: Sheet?
     @Published var fullScreen: FullSheetCover?
-    
-    //let authenticationCoordinator: AuthenticationCoordinator // Inject your module-specific coordinator
+    private let consoleLogger: Logger
     
     init() {
-            // Use Swinject to resolve the AuthenticationCoordinatorProtocol
-//        authenticationCoordinator = sharedContainer.resolve(AuthenticationCoordinatorProtocol.self) as! AuthenticationCoordinator
-        }
+        //logger = container.resolve(Logger.self)!
+        consoleLogger = container.resolve(Logger.self, name: "consoleLogger")!
+    }
     
     func push(_ page: Page) {
         path.append(page)
@@ -78,6 +78,7 @@ class Coordinator: ObservableObject {
         switch page {
         case .SignIn:
             SigninView(onSignUpTapped: {
+                self.consoleLogger.log("SigninView: SigninView Pushed...", level: .info)
                 self.push(.SignUp)
             }, onSuccessfulLogin: {
                 self.push(.Home)
