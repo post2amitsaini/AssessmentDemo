@@ -1,6 +1,6 @@
-Clean Architecture In SwiftUI
-Separation of Concerns in Swift App using Clean Principles.
-A demo project showcasing the setup of the SwiftUI app with Clean Architecture.
+Clean Architecture In SwiftUI.    
+Separation of Concerns in Swift App using Clean Principles.  
+A demo project showcasing the setup of the SwiftUI app with Clean Architecture.  
 
 # AssessmentDemo
 The Demo App uses 3 Swift Package Managers
