@@ -1,4 +1,5 @@
 Clean Architecture In SwiftUI.    
+Modular architecture with the help of Swift package manager(SPM).  
 Separation of Concerns in Swift App using Clean Principles.  
 A demo project showcasing the setup of the SwiftUI app with Clean Architecture.  
 
